@@ -2,11 +2,48 @@
   padding-right: 10px;
 }
 
+.movie-thumbnail {
+  width: 150px;
+  border-radius: 10px;
+  transition: 100ms;
+  border: 1px solid white;
+}
+
+.movie-thumbnail:hover {
+  transition: 100ms;
+  transform: scale(1.05);
+  border: 1px solid black;
+}
+
 .movie-image {
   width: 80%;
   max-width: 700px;
+  border-radius: 10px;
+  transition: 100ms;
+  border: 1px solid white;
 }
 
 .movie-introduction {
   margin-bottom: 10px;
+}
+
+.actor-introduction {
+  width: 300px;
+}
+
+/* .actor-details {
+
+} */
+
+.actor-image {
+  width: 50%;
+  border-radius: 10px;
+  transition: 100ms;
+  border: 1px solid white;
+}
+
+.actor-image:hover {
+  transition: 100ms;
+  transform: scale(1.05);
+  border: 1px solid black;
 }

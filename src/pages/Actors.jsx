@@ -1,16 +1,13 @@
 import { Link } from "react-router-dom";
 import "../App.css";
+import { ActorsComponent } from "../components/ActorsComponent";
 
 export function Actors() {
   return (
     <>
       <h2>Best Actors and Actresses</h2>
-      <p>My favorite actresses are</p>
-      <ul>
-        <li>Emma Watson</li>
-        <li>Emilia Clarke</li>
-      </ul>
-      <Link className="links" to="/Movies">
+      <ActorsComponent />
+      <Link className="links" to="/movies">
         Go to Movies
       </Link>
       <Link className="links" to="/">

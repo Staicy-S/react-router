@@ -8,6 +8,8 @@ import { Actors } from "./pages/Actors.jsx";
 import { RootLayout } from "./pages/RootLayout";
 import { ProductDetails } from "./pages/ProductDetails";
 import { ProductList } from "./pages/ProductList";
+import { MovieDetails } from "./components/MovieDetails";
+import { ActorDetails } from "./components/ActorDetails";
 
 const router = createBrowserRouter([
   {
@@ -20,11 +22,29 @@ const router = createBrowserRouter([
       },
       {
         path: "movies",
-        element: <Movies />,
+        children: [
+          {
+            index: true,
+            element: <Movies />,
+          },
+          {
+            path: ":movieId",
+            element: <MovieDetails />,
+          },
+        ],
       },
       {
         path: "actors",
-        element: <Actors />,
+        children: [
+          {
+            index: true,
+            element: <Actors />,
+          },
+          {
+            path: ":actorId",
+            element: <ActorDetails />,
+          },
+        ],
       },
       {
         path: "products",

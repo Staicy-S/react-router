@@ -8,7 +8,7 @@ export function Movies() {
     <>
       <h2>Best Movies</h2>
       <MovieComponent />
-      <Link className="links" to="/Actors">
+      <Link className="links" to="/actors">
         Go to Actors
       </Link>
       <Link className="links" to="/">
